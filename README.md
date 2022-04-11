@@ -2,6 +2,7 @@
 
 ### Logging is a tiny implementation of the logging library
 :warning: The library is currently under development!
+
 :warning: The library is temporarily not thread-safe!
 
 ##### Now you can already:
