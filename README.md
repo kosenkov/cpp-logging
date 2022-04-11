@@ -1,8 +1,8 @@
 # Logging
 
 ### Logging is a tiny implementation of the logging library
-❗The library is currently under development!
-❗The library is temporarily not thread-safe!
+:warning: The library is currently under development!
+:warning: The library is temporarily not thread-safe!
 
 ##### Now you can already:
 ✅ Create your own class "writer" for writing according to your preferences (see example); 
