@@ -13,12 +13,10 @@ int main()
     logf_i("Info message with arg : Num=%d, Str=%s",     3, "Info message");
     logf_d("Debug message with arg : Num=%d, Str=%s",    4, "Debug message");
 
-
     log_e("Error message without args.");
     log_w("Warning message without args.");
     log_i("Info message without args.");
     log_d("Debug message without args.");
-
 
     return 0;
 }
