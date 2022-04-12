@@ -4,6 +4,7 @@
 #include <string>
 #include "Record.h"
 
+
 namespace Logging 
 {
     class IRecordFormatter

@@ -74,7 +74,4 @@ namespace Logging {
     }
 }
 
-
-
-
 #endif

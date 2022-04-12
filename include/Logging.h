@@ -5,11 +5,13 @@
 #include "src/IWriter.h"
 
 
-#define logf_i(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Info,	    __LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
+//log with formatting
+#define logf_i(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Info,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
 #define logf_e(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
 #define logf_w(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
 #define logf_d(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Debug,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
 
+//log without formatting
 #define log_i(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Info,	    __LINE__,	__FUNCTION__, message));}
 #define log_e(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, message));}
 #define log_w(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, message));}
@@ -33,10 +35,8 @@ namespace Logging
 
         void Write(const Record &record) override 
         {
-            if(m_writer == nullptr)
-                throw std::logic_error("Logger::Write: writer is not initialized");
-            
-            m_writer->Write(record);
+            if(m_writer != nullptr)
+                m_writer->Write(record);
         }
 
     private:
@@ -50,7 +50,7 @@ namespace Logging
         static IWriter *m_writer;
     };
 
-    Logger::IWriter *Logger::m_writer = nullptr;
+    Logger::IWriter *Logger::m_writer = nullptr;    
 }
 
-#endif /*LOGGING_H*/
+#endif

@@ -3,6 +3,7 @@
 
 #include "Record.h"
 
+
 namespace Logging 
 {
     class IWriter 
@@ -12,6 +13,5 @@ namespace Logging
         virtual void Write(const Record &record) = 0;
     };
 }
-
 
 #endif

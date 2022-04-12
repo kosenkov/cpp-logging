@@ -5,6 +5,7 @@
 #include <string>
 #include "Common.h"
 
+
 namespace Logging 
 {
     enum class Level
@@ -20,7 +21,7 @@ namespace Logging
     {
     public: 
             explicit Record(
-                const Level &level,
+                const Level level,
                 const size_t line_number,
                 const std::string& caller_func,
                 const std::string& message
