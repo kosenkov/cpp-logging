@@ -1,6 +1,7 @@
 # Logging
 
-### Logging is a tiny implementation of the logging library
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=03B61F&center=true&vCenter=true&lines=Very+simple+logging+library+implementation!)](https://git.io/typing-svg)
+
 :warning: The library is currently under development!
 
 :bangbang: The library is temporarily not thread-safe!
