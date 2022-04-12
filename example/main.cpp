@@ -3,6 +3,7 @@
 #include "TxtWriter.h"
 #include "TxtFormatter.h"
 
+
 int main()
 {
     TxtWriter<TxtFormatter> writer("LoggerTest.txt");

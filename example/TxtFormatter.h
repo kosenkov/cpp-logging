@@ -6,6 +6,7 @@
 #include "../include/src/IRecordFormatter.h"
 #include "../include/src/Common.h"
 
+
 class TxtFormatter : public Logging::IRecordFormatter
 {
 public:

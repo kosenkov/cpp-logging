@@ -6,16 +6,16 @@
 
 
 //log with formatting
-#define logf_i(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Info,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
-#define logf_e(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
-#define logf_w(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
-#define logf_d(format, ...) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Debug,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
+#define logf_i(format, ...) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Info,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
+#define logf_e(format, ...) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
+#define logf_w(format, ...) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
+#define logf_d(format, ...) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Debug,	__LINE__,	__FUNCTION__, Logging::Common::args_format(format, __VA_ARGS__)));}
 
 //log without formatting
-#define log_i(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Info,	    __LINE__,	__FUNCTION__, message));}
-#define log_e(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, message));}
-#define log_w(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, message));}
-#define log_d(message) {Logging::Logger::instance().Write(Logging::Record(Logging::Level::Debug,	__LINE__,	__FUNCTION__, message));}
+#define log_i(message) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Info,	    __LINE__,	__FUNCTION__, message));}
+#define log_e(message) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Error,	__LINE__,	__FUNCTION__, message));}
+#define log_w(message) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Warning,	__LINE__,	__FUNCTION__, message));}
+#define log_d(message) {Logging::Logger::instance().write(Logging::Record(Logging::Level::Debug,	__LINE__,	__FUNCTION__, message));}
 
 namespace Logging
 {

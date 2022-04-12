@@ -6,6 +6,7 @@
 #include <string>
 #include "../include/src/IWriter.h"
 
+
 template<class Formatter>
 class TxtWriter : public Logging::IWriter
 {
@@ -21,7 +22,7 @@ public:
         m_outfile.close();
     }
 
-    void Write(const Logging::Record &record) override
+    void write(const Logging::Record &record) override
     {
         if(!m_outfile.is_open())
         {
