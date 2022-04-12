@@ -10,7 +10,7 @@ namespace Logging
     {
     public:
         virtual ~IWriter() {}
-        virtual void Write(const Record &record) = 0;
+        virtual void write(const Record &record) = 0;
     };
 }
 

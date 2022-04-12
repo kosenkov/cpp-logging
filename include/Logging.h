@@ -33,10 +33,10 @@ namespace Logging
             return instance;
         }
 
-        void Write(const Record &record) override 
+        void write(const Record &record) override 
         {
             if(m_writer != nullptr)
-                m_writer->Write(record);
+                m_writer->write(record);
         }
 
     private:
