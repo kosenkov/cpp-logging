@@ -1,12 +1,17 @@
 # Logging
+<p align="center">
+    <img src="./logo.png" width="23%" height="300px" />
+</p>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=5005&color=03B61F&multiline=true&width=600&lines=Very+simple+logging+library+implementation!)](https://git.io/typing-svg)
+
+<p align="center"></p>
 
 :warning: The library is currently under development!
 
 :bangbang: The library is temporarily not thread-safe!
 
-##### Now you can already:
+### Now you can already:
 :heavy_check_mark: Create your own class "writer" for writing according to your preferences (see example);
 
 :heavy_check_mark: Create your own "formatter" for data output;
@@ -41,3 +46,8 @@ int main()
     return 0;
 }
 ```
+
+###  📫 How to reach me:
+
+[![Linkedin Badge](https://img.shields.io/badge/-NikitaKosenkov-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nkosenkov/)](https://www.linkedin.com/in/nkosenkov/)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-NikitaKosenkov-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:n.kosenkov1@gmail.com)](mailto:n.kosenkov1@gmail.com)
