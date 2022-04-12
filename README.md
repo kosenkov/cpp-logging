@@ -1,6 +1,6 @@
 # Logging
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=03B61F&center=true&vCenter=true&lines=Very+simple+logging+library+implementation!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=03B61F&vCenter=true&lines=Very+simple+logging+library+implementation!)](https://git.io/typing-svg)
 
 :warning: The library is currently under development!
 
