@@ -1,6 +1,6 @@
 # Logging
 <p align="center">
-    <img src="./logo.png" width="23%" height="300px" />
+    <img src="./logo.png" width="300px" height="300px" />
 </p>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=5005&color=03B61F&multiline=true&width=600&lines=Very+simple+logging+library+implementation!)](https://git.io/typing-svg)
